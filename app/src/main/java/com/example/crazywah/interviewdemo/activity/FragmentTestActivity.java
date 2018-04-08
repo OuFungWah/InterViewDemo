@@ -14,6 +14,8 @@ import com.example.crazywah.interviewdemo.fragment.FragmentLifeCycyle;
 public class FragmentTestActivity extends AppCompatActivity {
 
     private Button btn;
+    private FragmentTransaction transition;
+    private FragmentLifeCycyle fragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,16 +24,21 @@ public class FragmentTestActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.btn);
 
-        FragmentLifeCycyle fragment = new FragmentLifeCycyle();
+        fragment = new FragmentLifeCycyle();
 
         //获取fragment管理器
         FragmentManager manager = getSupportFragmentManager();
 
         //开启事务
-        FragmentTransaction transition =  manager.beginTransaction();
+        transition =  manager.beginTransaction();
 
         transition.add(R.id.frame,fragment);
         transition.commit();
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

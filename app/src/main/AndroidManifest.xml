@@ -22,6 +22,7 @@
         <activity android:name=".activity.MyReceiverTestActivity" />
         <activity android:name=".activity.LoadingViewActivity" />
         <activity android:name=".activity.FragmentTestActivity" />
+        <activity android:name=".activity.HandlerTestActivity" />
 
         <service android:name=".service.ServiceLifeCycle" />
     </application>

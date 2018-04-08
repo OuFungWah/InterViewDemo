@@ -18,14 +18,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             "Service生命周期",
             "Fragment生命周期",
             "BroadCast测试",
-            "自定义LoadingView"};
+            "自定义LoadingView",
+            "HandlerThread测试"};
 
     private Class[] targetActivities = new Class[]{
             ActivityLifecycleActivity.class,
             ServiceLifeCycleActivity.class,
             FragmentTestActivity.class,
             MyReceiverTestActivity.class,
-            LoadingViewActivity.class};
+            LoadingViewActivity.class,
+            HandlerTestActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
