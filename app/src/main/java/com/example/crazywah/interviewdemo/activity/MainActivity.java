@@ -16,12 +16,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String[] titles = new String[]{
             "Activity生命周期",
             "Service生命周期",
+            "Fragment生命周期",
             "BroadCast测试",
             "自定义LoadingView"};
 
     private Class[] targetActivities = new Class[]{
             ActivityLifecycleActivity.class,
             ServiceLifeCycleActivity.class,
+            FragmentTestActivity.class,
             MyReceiverTestActivity.class,
             LoadingViewActivity.class};
 
