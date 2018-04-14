@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="vertical">
+
+    <com.example.crazywah.interviewdemo.view.SwitchButtonV1
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="SwitchButton.v1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.crazywah.interviewdemo.view.SwitchButtonV2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="SwitchButton.v2"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.crazywah.interviewdemo.view.SwitchButtonV3
+        android:id="@+id/sbv3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/v3_tv"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="40dp"
+        android:text="SwitchButton.v3"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

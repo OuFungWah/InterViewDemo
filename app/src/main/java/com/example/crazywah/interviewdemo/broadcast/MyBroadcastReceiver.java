@@ -1,5 +1,6 @@
 package com.example.crazywah.interviewdemo.broadcast;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +13,14 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     private static final String TAG = "MyBroadcastReceiver";
 
     @Override
-    public void onReceive(Context context, Intent intent) {
+    public void onReceive(Context context, final Intent intent) {
         Log.d(TAG, "onReceive: executed");
-        ToastUtil.showShort("收到广播信息："+intent);
+        ((Activity)context).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                ToastUtil.showShort("收到广播信息："+intent);
+            }
+        });
+
     }
 }
